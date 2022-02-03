@@ -1,0 +1,66 @@
+/* IMPORTANDO AS FONTES DO GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap");
+
+/* VARIÁVEIS NO CSS */
+
+:root {
+    --header-height: 3rem;
+  
+    /*========== Colors ==========*/
+    --title-color: #0b0a0a;
+    --text-color: #403a3a;
+    --text-color-light: #707070;
+    --container-color: #fafafa;
+    --container-color-alt: #f0efef;
+    --body-color: #fcfcfc;
+  
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== Margin ==========*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+  /* BASE */
+
+  *, ::before, ::after {
+      box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  body {
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color)
+}
+
+h1, h2, h3, ul, p {
+    margin: 0;
+}
+

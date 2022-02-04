@@ -64,3 +64,147 @@ h1, h2, h3, ul, p {
     margin: 0;
 }
 
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 1.5rem 0;
+}
+
+.section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.33rem;
+  text-align: center;
+  margin-bottom: var(--mb-3);
+}
+
+/* LAYOUT */
+
+.bd-container {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo, .nav-toggle {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav_item {
+  text-align: center;
+}
+
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  font-weight: var(--font-medium);
+}
+
+.nav_icon {
+  font-size: 1.2rem;
+  margin-bottom: var(--mb-1);
+}
+
+@media screen and (max-width: 968px) {
+  .nav-menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    border-radius: 1rem 1rem 0 0;
+    z-index: var(--z-fixed);
+    transition: 0.3s;
+  }
+}
+
+.home {
+  position: relative;
+}
+
+.home-container {
+  gap: 3rem;
+}
+
+.home-data {
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.home-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
+
+.home-title {
+  font-size: var(--h1-font-size);
+}
+
+.home-profession {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.home-adress {
+  gap: 1rem;
+}
+
+.home-information {
+  display: flex;
+}

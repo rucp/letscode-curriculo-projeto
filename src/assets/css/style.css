@@ -135,7 +135,7 @@ img {
 
 .nav-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 2rem;
 }
 
@@ -207,4 +207,90 @@ img {
 
 .home-information {
   display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home_icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+/* SOCIAL */
+
+.social-container {
+  grid-template-columns: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color)
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.profile-description {
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+
+/* EDUCATION and EXPERIENCE */
+
+.education-content,
+.experience-content {
+  display: flex;
+}
+
+.education-time, 
+.experience-time {
+  padding-right: 1rem;
+}
+
+.education-rounder,
+.experience-rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-color-light);
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+
+.education-line,
+.experience-content {
+  display: block;
+  width: 2px;
+  height: 113%;;
+  background-color: var(--text-color-light);
+  transform: translate(7px, 0);
+}
+
+.education-data, 
+.experience-data {
+  gap: 0.5rem;
+}
+
+.education-title,
+.experience-title {
+  font-size: var(--h3-font-size);
+  font-weight: 600;
+}
+
+.education-studies {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.education-year {
+  font-size: var(--smaller-font-size);
 }

@@ -233,9 +233,25 @@ img {
 }
 
 .social-icon {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.bxl-linkedin-square:hover {
+  color: #0a66c2;
+}
+
+.bxl-github:hover {
+  color: #AFB5BB;
+}
+
+.bxl-youtube:hover {
+  color: #ed3b00;
+}
+
+.bxl-twitter:hover {
+  color: #1E9BF0;
 }
 
 .profile-description {

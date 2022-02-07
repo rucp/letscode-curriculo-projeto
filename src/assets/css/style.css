@@ -76,6 +76,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 img {
@@ -156,6 +157,8 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+
+/* MEDIA QUERY CONFORME O TAMANHO DA TELA A SER VISUALIZADA */
 @media screen and (max-width: 968px) {
   .nav-menu {
     position: fixed;
@@ -201,7 +204,7 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.home-adress {
+.home-address {
   gap: 1rem;
 }
 
@@ -222,6 +225,7 @@ img {
   grid-template-columns: max-content;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
@@ -287,10 +291,10 @@ img {
 }
 
 .education-line,
-.experience-content {
+.experience-line {
   display: block;
   width: 2px;
-  height: 113%;;
+  height: 110%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
@@ -306,7 +310,8 @@ img {
   font-weight: 600;
 }
 
-.education-studies {
+.education-studies,
+.experience-company {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
@@ -314,6 +319,13 @@ img {
 .education-year {
   font-size: var(--smaller-font-size);
 }
+
+/* EXPERIENCE */
+
+.experience-description {
+  text-align: justify;
+}
+
 
 /* SKILLS */
 
@@ -330,4 +342,91 @@ img {
 
 .skills-circle {
   display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  margin-right: 0.60rem;
 }
+
+/* CERTIFICATES */
+
+.certificates-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.certificate-description {
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+
+/* INTERESTS */
+
+.interests-container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* SCROLL */
+
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background-color: var(red);
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scroll-top-icon {
+  font-size: 20px;
+  color: crimson;
+}
+
+/* ESTILISANDO OS RESUMOS ESQUERDA E DIREITA */
+
+.resume {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  background-color: var(--container-color);
+  box-shadow: 0 0 8px #00000073;
+}
+
+.resume-left {
+  background-color: var(--container-color-alt);
+}
+
+.resume-right,
+.resume-left {
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  text-align: initial;
+  margin-top: var(--mb-2);
+}
+
+.interests-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interests-icons {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.25rem;
+}
+
+.interests-name {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+

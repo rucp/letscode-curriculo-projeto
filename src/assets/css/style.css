@@ -240,18 +240,22 @@ img {
 
 .bxl-linkedin-square:hover {
   color: #0a66c2;
+  transition: 0.25s ease-in-out;
 }
 
 .bxl-github:hover {
-  color: #AFB5BB;
+  color: black;
+  transition: 0.25s ease-in-out;
 }
 
 .bxl-youtube:hover {
   color: #ed3b00;
+  transition: 0.25s ease-in-out;
 }
 
 .bxl-twitter:hover {
   color: #1E9BF0;
+  transition: 0.25s ease-in-out;
 }
 
 .profile-description {
@@ -309,4 +313,21 @@ img {
 
 .education-year {
   font-size: var(--smaller-font-size);
+}
+
+/* SKILLS */
+
+.skills-content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.skills-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-3);
+}
+
+.skills-circle {
+  display: inline-block;
 }

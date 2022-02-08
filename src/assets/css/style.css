@@ -64,7 +64,8 @@ h1, h2, h3, ul, p {
     margin: 0;
 }
 
-h3 {
+
+h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -118,6 +119,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
+  background-color: var(--body-color);
   box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.1);
   transition: 0.3s;
 }
@@ -130,6 +132,11 @@ img {
 }
 
 .nav-logo, .nav-toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav-toggle {
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -206,17 +213,22 @@ img {
 
 .home-address {
   gap: 1rem;
+
 }
 
 .home-information {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
+  text-align: center;
   font-size: var(--small-font-size);
 }
 
 .home_icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
+
 }
 
 /* SOCIAL */
@@ -391,42 +403,63 @@ img {
 
 /* ESTILISANDO OS RESUMOS ESQUERDA E DIREITA */
 
-.resume {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  background-color: var(--container-color);
-  box-shadow: 0 0 8px #00000073;
-}
+@media screen and (min-width: 968px) {
+  body {
+    margin: 3rem 0;
+  }
 
-.resume-left {
-  background-color: var(--container-color-alt);
-}
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.resume-right,
-.resume-left {
-  padding: 0 1.5rem;
-}
+  .l-header, 
+  .scroll-top {
+    display: none;
+  }
 
-.section-title {
-  text-align: initial;
-  margin-top: var(--mb-2);
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px #00000073;
+  }
+  
+  .resume-left {
+    background-color: var(--container-color-alt);
+  }
+  
+  .resume-right,
+  .resume-left {
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    text-align: initial;
+    margin-top: var(--mb-2);
+  }
+  
+  .interests-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .interests-icons {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.25rem;
+  }
+  
+  .interests-name {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  
+  
+  .interests-container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3rem;
+  }
 }
-
-.interests-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.interests-icons {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
-  margin-bottom: 0.25rem;
-}
-
-.interests-name {
-  font-size: 0.75rem;
-  text-align: center;
-}
-
 

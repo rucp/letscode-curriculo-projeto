@@ -371,7 +371,6 @@ img {
 }
 
 .languages-name {
-  font-size: 1rem;
   margin-bottom: var(--mb-3);
 }
 /* CERTIFICATES */
@@ -436,7 +435,7 @@ img {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     background-color: var(--container-color);
-    box-shadow: 0 0 8px #00000073;
+    box-shadow: 0 0 8px #0000002c;
   }
   
   .resume-left {

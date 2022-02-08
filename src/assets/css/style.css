@@ -222,6 +222,7 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
+  
   font-size: var(--small-font-size);
 }
 
@@ -306,7 +307,7 @@ img {
 .experience-line {
   display: block;
   width: 2px;
-  height: 110%;
+  height: 112%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
@@ -352,7 +353,8 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-.skills-circle {
+.skills-circle,
+.languages-circle {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -361,6 +363,17 @@ img {
   margin-right: 0.60rem;
 }
 
+
+/* LANGUAGES */
+
+.languages-content {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.languages-name {
+  font-size: 1rem;
+  margin-bottom: var(--mb-3);
+}
 /* CERTIFICATES */
 
 .certificates-title {
@@ -377,6 +390,7 @@ img {
 
 .interests-container {
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
 }
 
 /* SCROLL */

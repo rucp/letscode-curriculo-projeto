@@ -1,71 +1,79 @@
 /* IMPORTANDO AS FONTES DO GOOGLE */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap');
 
 /* VARIÁVEIS NO CSS */
 
 :root {
-    --header-height: 3rem;
-  
-    /*========== Colors ==========*/
-    --title-color: #0b0a0a;
-    --text-color: #403a3a;
-    --text-color-light: #707070;
-    --container-color: #fafafa;
-    --container-color-alt: #f0efef;
-    --body-color: #fcfcfc;
-  
-    /*========== Font and typography ==========*/
-    --body-font: "Poppins", sans-serif;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-  
-    /*========== Margin ==========*/
-    --mb-1: 0.5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-  
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-  }
+  --header-height: 3rem;
 
-  /* BASE */
+  /*========== Colors ==========*/
+  --title-color: #0b0a0a;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
 
-  *, ::before, ::after {
-      box-sizing: border-box;
-  }
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --name-font: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
 
-  html {
-    scroll-behavior: smooth;
-  }
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-  .hidden {
-      display: none;
-  }
+  /*========== Margin ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
 
-  body {
-    margin: 0 0 var(--header-height) 0;
-    padding: 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color)
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
-h1, h2, h3, ul, p {
-    margin: 0;
+/* BASE */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-h1, h2, h3 {
+.hidden {
+  display: none;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -115,12 +123,12 @@ img {
 
 .l-header {
   width: 100%;
-  position: fixed; 
+  position: fixed;
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
@@ -131,7 +139,8 @@ img {
   align-items: center;
 }
 
-.nav-logo, .nav-toggle {
+.nav-logo,
+.nav-toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -143,7 +152,7 @@ img {
 
 .nav-list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -164,7 +173,6 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-
 /* MEDIA QUERY CONFORME O TAMANHO DA TELA A SER VISUALIZADA */
 @media screen and (max-width: 968px) {
   .nav-menu {
@@ -174,7 +182,7 @@ img {
     width: 100%;
     padding: 2rem 1.5rem;
     background-color: var(--body-color);
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: 0.3s;
@@ -203,7 +211,7 @@ img {
 }
 
 .home-title {
-  font-size: var(--h1-font-size);
+  font-size: var(--name-font);
 }
 
 .home-profession {
@@ -213,7 +221,6 @@ img {
 
 .home-address {
   gap: 1rem;
-
 }
 
 .home-information {
@@ -222,14 +229,13 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
-  
+
   font-size: var(--small-font-size);
 }
 
 .home_icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
-
 }
 
 /* SOCIAL */
@@ -246,7 +252,7 @@ img {
   display: inline-flex;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .social-icon {
@@ -271,7 +277,7 @@ img {
 }
 
 .bxl-twitter:hover {
-  color: #1E9BF0;
+  color: #1e9bf0;
   transition: 0.25s ease-in-out;
 }
 
@@ -287,7 +293,7 @@ img {
   display: flex;
 }
 
-.education-time, 
+.education-time,
 .experience-time {
   padding-right: 1rem;
 }
@@ -312,7 +318,7 @@ img {
   transform: translate(7px, 0);
 }
 
-.education-data, 
+.education-data,
 .experience-data {
   gap: 0.5rem;
 }
@@ -339,7 +345,6 @@ img {
   text-align: justify;
 }
 
-
 /* SKILLS */
 
 .skills-content {
@@ -360,9 +365,8 @@ img {
   height: 5px;
   border-radius: 50%;
   background-color: var(--text-color);
-  margin-right: 0.60rem;
+  margin-right: 0.6rem;
 }
-
 
 /* LANGUAGES */
 
@@ -426,7 +430,7 @@ img {
     margin-right: auto;
   }
 
-  .l-header, 
+  .l-header,
   .scroll-top {
     display: none;
   }
@@ -437,42 +441,40 @@ img {
     background-color: var(--container-color);
     box-shadow: 0 0 8px #0000002c;
   }
-  
+
   .resume-left {
     background-color: rgba(85, 116, 70, 0.342);
   }
-  
+
   .resume-right,
   .resume-left {
     padding: 0 1.5rem;
   }
-  
+
   .section-title {
     text-align: initial;
     margin-top: var(--mb-2);
   }
-  
+
   .interests-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .interests-icons {
     font-size: 1.5rem;
     color: var(--text-color-light);
     margin-bottom: 0.25rem;
   }
-  
+
   .interests-name {
     font-size: 0.75rem;
     text-align: center;
   }
-  
-  
+
   .interests-container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3rem;
   }
 }
-
